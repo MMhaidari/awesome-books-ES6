@@ -1,8 +1,4 @@
 export default class Books {
-  constructor() {
-    this.bookList = [];
-  }
-
   static fetchBooks() {
     const getBooks = localStorage.getItem('books');
     return getBooks ? JSON.parse(getBooks) : [];
