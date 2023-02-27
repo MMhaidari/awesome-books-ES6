@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <h3 class="navigation-header">Awesome Books</h3>
+            <ul class="navigation--links">
+                <li class="nav__link"><a href="#" class="list--link">List</a></li>
+                <hr class="lines">
+                <li class="nav__link"><a href="#" class="add-new--link">Add new</a></li>
+                <hr class="lines">
+                <li class="nav__link"><a href="#" class="contact--link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="date" id="date"></div>
+    
+    <div class="container">
+        <div class="book--list hidden">    
+            <h1 class="primary-header">Add a new book</h1>
+            <div class="book-container"></div>
+        </div>
+        
+        <form action="#" class="book-form">
+           <h2 class="primary-header">Add a New Book</h2>
+           <input type="text" name="book-title" id="book-title" placeholder="Book Title" >
+           <input type="text" name="book-author" id="book-author" placeholder="Book Author">
+           <input class="add-book" type="submit" name="add-book" id="add-book" value="Add">
+        </form>
+
+        <div class="contact hidden">
+            <h1 class="primary-header"> Contact information</h1>
+            <p class="contact--description">Do have any questions or you just want to say "Hello" <br> you can reach out to us!</p>
+            <ul class="contact--info">
+                <li>Our e-mail: mail@mail.com</li>
+                <li>Our phone number: 0043586534422</li>
+                <li>Our address: Streetname 22,84503, City, Country</li>
+            </ul>
+        </div>
+     </div>
+     <footer class="footer">
+        <h2>Copyright@ Microverse 2023</h2>
+     </footer>
+     
+    <script src="index.js" type="module"></script>
+</body>
+</html>

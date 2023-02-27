@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+html {
+  font-size: 62.25%;
+}
+
+body {
+  background-color: rgb(247, 244, 244);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.9rem;
+  margin: 3.2rem 3.2rem 0 3.2rem;
+  padding: 1.8rem;
+  border: 0.4rem solid black;
+}
+
+.navigation--links {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.navigation--links li {
+  list-style: none;
+}
+
+.navigation--links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.lines {
+  border: 0.25rem solid #000;
+}
+
+.date {
+  font-size: 1.9rem;
+  padding-left: 3.2rem;
+  position: absolute;
+}
+
+.primary-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.book-container {
+  margin: 0 auto;
+  border: 0.4rem solid black;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+
+.new-book-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.new-book-container:nth-child(odd) {
+  background-color: rgb(204, 204, 204);
+}
+
+.removeBtn {
+  font-size: 1.8rem;
+  border: 0.3rem solid black;
+  box-shadow: 0.315rem 0.435rem 0.315rem dimgrey;
+  padding: 0.6rem 0.9rem;
+  font-weight: 700;
+}
+
+.removeBtn:active {
+  box-shadow: none;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  margin: 0 auto;
+}
+
+.form-header {
+  font-size: 2rem;
+}
+
+.book-form input {
+  font-weight: 700;
+  font-size: 1.9rem;
+  border: 0.3rem solid black;
+}
+
+.book-details {
+  align-self: stretch;
+  width: 70%;
+}
+
+.add-book {
+  padding: 0.6rem 0.9rem;
+  box-shadow: 0.315rem 0.435rem 0.315rem dimgrey;
+}
+
+.add-book:active {
+  box-shadow: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact {
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+.contact--description {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+.contact--info {
+  font-size: 1.9rem;
+  margin-left: 2.8rem;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  top: 88%;
+  margin: 3.2rem;
+  border: 0.3rem solid #000;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 850px) {
+  .book-container {
+    width: 76rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .primary-header {
+    font-size: 3rem;
+  }
+
+  .contact--description {
+    font-size: 1.8rem;
+  }
+
+  .contact--info {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 0.6rem;
+  }
+
+  .navigation {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    margin: 1.2rem;
+  }
+
+  .navigation--links {
+    gap: 1.2rem;
+  }
+
+  .navigation ul a {
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    width: 95vw;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+    width: 90vw;
+    top: 90%;
+    left: 5%;
+    padding: 1.1rem;
+    margin: 0 auto;
+  }
+}
